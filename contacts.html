@@ -31,9 +31,11 @@
 
             <div class="col-md-6">
 
+                <h3>Leave us a message :</h3>
+
                 <input type="text" placeholder="Your Name ..."> <br>
                 <input type="email" placeholder="Your Email..."> <br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Type here ..."></textarea> <br>
+                <textarea name="" id="" placeholder="Type here ..."></textarea> <br>
                 <input type="submit" style="background-color: black; width: fit-content;height: fit-content; color: whitesmoke;" value="SEND">
 
             </div>
@@ -56,18 +58,21 @@
             </div>
 
         </div>
+        <footer>
+            <p style="color: whitesmoke;">2021 Copyright Stephanie, Najmah & Mark</p>
+        </footer>
         <script>
             $(document).ready(function() {
                 $("#phone").click(function() {
-                    $(".show").slideToggle();
+                    $(".show").slideToggle(700);
 
                 });
                 $("#address").click(function() {
-                    $("#address2").slideToggle();
+                    $("#address2").slideToggle(700);
 
                 });
                 $("#email").click(function() {
-                    $("#email2").slideToggle();
+                    $("#email2").slideToggle(700);
 
                 });
             });
