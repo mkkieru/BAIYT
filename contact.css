@@ -1,31 +1,84 @@
-.contact{
-    position: relative;
-    min-height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*flex-direction: column;*/
-    background: url(./contacts.jpg);
-    background-size: cover;
+.info a:hover {
+    cursor: pointer;
+    color: black;
 }
-.contact .content{
+
+.info {
+    text-align: right;
+    font-size: medium;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.info a {
+    padding-left: 10px;
+}
+
+input {
+    width: 50%;
+    height: 20px;
+    border-radius: 3px;
+    background: none;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: white;
+    outline: none;
+    background: transparent;
+}
+
+textarea {
+    width: 50%;
+    margin: .5rem;
+    border-radius: 8px;
+    background: transparent;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: white;
+    outline: none;
+    background: transparent;
+}
+
+.submission-form {
+    text-align: center;
+}
+
+.input-field {
+    color: black;
+    background: none;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: white;
+    outline: none;
+    background: transparent;
+}
+
+
+/* 
+.contact .content {
     max-width: 600px;
     text-align: center;
 }
-.contact .content h2{
+
+.contact .content h2 {
     font-size: 36px;
     font-weight: 500;
-    color:white;
+    color: white;
 }
-.contact .content p{
+
+.contact .content p {
     font-size: 36px;
     font-weight: 500;
-    color:white;
+    color: white;
 }
-.contactForm.inputBox
-{
+
+.contactForm.inputBox {
     position: relative;
     width: 100px;
     margin-top: 10px;
-}
-
+} */

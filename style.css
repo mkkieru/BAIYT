@@ -10,7 +10,8 @@ body {
 .info {
     text-align: right;
     font-size: medium;
-    padding-top: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 a:link {

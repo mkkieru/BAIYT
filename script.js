@@ -1,10 +1,10 @@
-$(document).ready(function(){
-    $("#design").click(function(){
+$(document).ready(function() {
+    $("#design").click(function() {
         $(".show").slideToggle();
-       
+
     });
-    $("#design2").click(function(){
+    $("#design2").click(function() {
         $(".showing").slideToggle();
-       
+
     });
 });

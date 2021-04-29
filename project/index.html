@@ -6,65 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./db.css">
 </head>
 
 <body>
 
-    <a href="../index.html">HOME</a>
-    <a href="../contacts.html">CONTACT US</a>
-    <a href="../project/index.html">SERVICES</a>
+    <div class="info" style="background-color: whitesmoke;">
+        <span style="float: left;width: 150px; size: 2rem;"><strong>BAIYT PMS</strong></span>
+        <a href="../index.html">HOME</a>
+        <a href="../project/index.html">SERVICES</a>
+        <a style="padding-right: 90px;" href="../contacts.html">CONTACT US</a>
 
-    <form action="./newtable.php" method="POST">
-        <h3>Enter new property name :</h3>
-        <input type="text" name="newtable"><br>
-        <input type="submit" name="old" value="SUBMIT">
-    </form>
+    </div>
 
 
-    <h3>NEW RECORD</h3>
-    <form action="./add.php" method="post">
+    <h4 style="padding-top: 5%;">
+        Here you can insert records of new apartments,
+        <div>edit the existing records and insert records of tenants into a database</div>
+    </h4>
 
-        <h3>Add to which table ;</h3>
-        <input type="text" name="add"><br><br>
-
-
-        <label for="name">First Name :</label>
-        <input type="text" name="fname" required>
-
-        <label for="name">Last Name :</label>
-        <input type="text" name="lname" required>
-
-        <label for="id">ID Number :</label>
-        <input type="number" name="id">
-
-        <label for="id">Phone Number :</label>
-        <input type="number" name="phone"><br>
-
-        <input type="submit" name="update" value="UPDATE DATA">
-    </form>
-
-    <form action="update.php" method="post">
+    <h4 style="padding-bottom: 5%;">
+        Be sure to use the same exact property name as the one u
+        <div>enteres while creating a new record and updating a record.</div>
+    </h4>
 
 
-        <h3>UPDATE DB</h3>
 
-        <h4>Add to which table ;</h4>
-        <input type="text" name="insert"><br><br>
 
-        <label for="name">First Name :</label>
-        <input type="text" name="fname" required>
 
-        <label for="name">Last Name :</label>
-        <input type="text" name="lname" required>
+    <div class="container">
+        <div class="tables">
+            <div class="row">
+                <div class="col-md-4">
+                    <form action="./newtable.php" method="POST">
+                        <h3>Enter new property name :</h3>
+                        <input type="text" name="newtable"><br>
+                        <input style="background-color: black;color: whitesmoke;" type="submit" name="old" value="SUBMIT">
+                    </form>
+                </div>
 
-        <label for="id">ID Number :</label>
-        <input type="number" name="id">
+                <div class="col-md-4">
+                    <h3>NEW RECORD</h3>
+                    <form action="./add.php" method="post">
 
-        <label for="id">Phone Number :</label>
-        <input type="number" name="phone"><br>
+                        <h3>Add to which property ;</h3>
+                        <input type="text" name="add"><br>
 
-        <input type="submit" name="new" value="UPDATE DATA">
-    </form>
+
+                        <label for="name">First Name :</label><br>
+                        <input type="text" name="fname" required><br>
+
+                        <label for="name">Last Name :</label><br>
+                        <input type="text" name="lname" required><br>
+
+                        <label for="id">ID Number :</label><br>
+                        <input type="number" name="id"><br>
+
+                        <label for="id">Phone Number :</label><br>
+                        <input type="number" name="phone"><br>
+
+                        <input style="background-color: black;color: whitesmoke;" type="submit" name="update" value="ADD DATA">
+                    </form>
+                </div>
+
+                <div class="col-md-4">
+                    <form action="update.php" method="post">
+
+
+                        <h3>UPDATE DB</h3>
+
+                        <h4>Add to which table ;</h4>
+                        <input type="text" name="insert"><br>
+
+                        <label for="name">First Name :</label><br>
+                        <input type="text" name="fname" required><br>
+
+                        <label for="name">Last Name :</label><br>
+                        <input type="text" name="lname" required><br>
+
+                        <label for="id">ID Number :</label><br>
+                        <input type="number" name="id"><br>
+
+                        <label for="id">Phone Number :</label><br>
+                        <input type="number" name="phone"><br>
+
+                        <input style="background-color: black;color: whitesmoke;" type="submit" name="new" value="UPDATE DATA">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="color: whitesmoke;">2021 Copyright Stephanie, Najmah & Mark</p>
+    </footer>
 </body>
 
 </html>
