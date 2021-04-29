@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+
+    <form action="./newtable.php" method="POST">
+        <h3>Enter new property name :</h3>
+        <input type="text" name="newtable"><br>
+        <input type="submit" name="old" value="SUBMIT">
+    </form>
+
+
+    <h3>NEW RECORD</h3>
+    <form action="./add.php" method="post">
+
+        <h3>Add to which table ;</h3>
+        <input type="text" name="add"><br><br>
+
+
+        <label for="name">First Name :</label>
+        <input type="text" name="fname" required>
+
+        <label for="name">Last Name :</label>
+        <input type="text" name="lname" required>
+
+        <label for="id">ID Number :</label>
+        <input type="number" name="id">
+
+        <label for="id">Phone Number :</label>
+        <input type="number" name="phone"><br>
+
+        <input type="submit" name="update" value="UPDATE DATA">
+    </form>
+
+    <form action="update.php" method="post">
+
+
+        <h3>UPDATE DB</h3>
+
+        <h4>Add to which table ;</h4>
+        <input type="text" name="insert"><br><br>
+
+        <label for="name">First Name :</label>
+        <input type="text" name="fname" required>
+
+        <label for="name">Last Name :</label>
+        <input type="text" name="lname" required>
+
+        <label for="id">ID Number :</label>
+        <input type="number" name="id">
+
+        <label for="id">Phone Number :</label>
+        <input type="number" name="phone"><br>
+
+        <input type="submit" name="new" value="UPDATE DATA">
+    </form>
+</body>
+
+</html>
