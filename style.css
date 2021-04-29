@@ -9,13 +9,11 @@ body {
 
 .info {
     text-align: right;
-    color: black;
     font-size: medium;
     padding-top: 2rem;
 }
 
 a:link {
-    color: black;
     font-weight: bolder;
 }
 
@@ -30,7 +28,6 @@ a:link {
 
 .container {
     text-align: center;
-    color: black;
 }
 
 #btn {
