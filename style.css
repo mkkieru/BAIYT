@@ -40,3 +40,23 @@ a:link {
 h5 {
     font-size: 17px;
 }
+
+.start {
+    padding-top: 6%;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card {
+    background-color: turquoise;
+    width: 250px;
+    margin: .5rem;
+}
+
+.card :hover {
+    opacity: .5;
+}
