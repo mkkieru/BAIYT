@@ -6,5 +6,25 @@
     align-items: center;
     /*flex-direction: column;*/
     background: url(/contact.jpg);
-
+    background-size: cover;
+}
+.contact .content{
+    max-width: 600px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:black;
+}
+.contact .content p{
+    font-size: 36px;
+    font-weight: 500;
+    color:black;
+}
+.contactForm.inputBox
+{
+    position: relative;
+    width: 100px;
+    margin-top: 10px;
 }
